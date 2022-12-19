@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  spring-mongo-rest:
+    image: snaiperlfc/spring-mongo-rest:1.0.0
+    container_name: spring-mongo-rest
+    restart: on-failure
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_MONGODB_URL=mongodb://10.53.202.133:27017/users

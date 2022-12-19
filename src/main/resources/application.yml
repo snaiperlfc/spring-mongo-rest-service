@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-mongo-rest
+
+  data:
+    mongodb:
+      uri:
+        ${SPRING_MONGODB_URL}
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
